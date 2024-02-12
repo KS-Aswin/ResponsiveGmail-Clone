@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color:white;
+	background-color:#f6f8fc;
 }
 
 span {
@@ -15,7 +15,6 @@ span {
 .container {
 	display:flex;
 	background-color:#f6f8fc;
-	width:100%;
 }
 
 .gmail{
@@ -27,9 +26,6 @@ span {
 	flex-direction:column;
 	align-items:center;
 	background-color:#eaf1fb;
-	height:100vh;
-	width:28px;
-	padding:0 20px;
 }
 
 .menuIcon {
@@ -96,20 +92,17 @@ span {
 .containerContents {
 	display:flex;
 	justify-content:center;
-	width:91%;
 	
 }
 
 .contentsLeft {
 	display:flex;
 	flex-direction:column;
-	padding:10px;
-	
-	width:220px;
+	padding:10px 0px 10px 10px;
 }
 
 .gmail {
-	padding:2px 10px;
+	padding:2px 0px 2px 10px;
 	cursor:pointer;
 }
 
@@ -150,7 +143,6 @@ span {
 	justify-content:center;
 	align-items:flex-start;
 	padding:0px 10px 10px 0px;
-	width:205px;
 	color:#202124;
 	
 }
@@ -229,41 +221,38 @@ span {
 	display:flex;
 	align-items:center;
 	width:auto;
-	
 }
 
 .search {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	width: 610px;
+	/* width: 610px; */
 	margin:8px 15px;
+	margin-left:0px;
 	height: auto;
 }
 
 
 .searchBox {
 	display: flex;
-	justify content: space-between;
+	justify-content: flex-star;
 	align-content: center;
 	align-items: center;
 	width: 599px;
 	height: 50px;
 	border: 1px solid transperant;
 	border-radius: 25px;
-	padding: 0 13px;
 	background-color:#eaf1fb;
-	
 }
 
 .searchIcon{
-	padding:10px 0;
+	padding:10px;
 	font-size:24px;
 	color:#444746;
 }
 .tuneIcon{
 	padding:10px;
-	margin-left:15px;
 	font-size:24px;
 	color:#444746;
 }
@@ -285,11 +274,9 @@ span {
 }
 
 .formText {
-	margin-right:40%;
+	margin-right:49.5%;
 }
-.icons {
-	padding-left:65px;
-}
+
 
 .navbarIcons {
 	display:flex;
@@ -297,7 +284,7 @@ span {
 	align-items:center;
 	gap:10px;
 	color:#5f6368;
-	margin-left:200px;
+	margin-left:210px;
 }
 .navbarIcons span{
 	padding:10px;
@@ -313,35 +300,27 @@ span {
 
 .emailContainer {
 	display:flex;
-	justify-content:space-between;
-	 
 	align-items:center;
-	width:100%;  
-
 }
 
 .emailContainerLeft {
 	background-color:white;
-	width:955px;
-	height:87vh;
 	border-radius:20px;
-	margin-left:17px;
-	padding-right:30px;
+	width:966.5px;
 }
 
 .emailNav {
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	height:46px;
-	padding-left:15px
+	padding:5px;
+	margin-left:12.5px
 	
 }
 .emailNavLeft {
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	height:10px;
 }
 .emailNavLeft span{
 	padding:5px 2px;
@@ -370,7 +349,6 @@ span {
 	justify-content:center;
 	align-items:center;
 	font-size:12px;
-	padding:14px 0px;
 	gap:10px;
 }
 .emailNavRight p{
@@ -402,7 +380,494 @@ span {
 	padding-left:12px;
 	font-size:14px;
 	color:#202124;
-	width:100%;
+	z-index:1;
+	position:relative;
+	width:950px;
+}
+.emailMsg span{
+	font-size:18px;
+	padding:5px;
+	
+}
+
+.emailMsgIcons{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:6.5%;
+	color:#b8b8b8;		
+}
+.emailMsgIcons span{
+	color:#b8b8b8;
+}
+.emailMsgContents{
+	display: flex;
+	align-items:center;
+	justify-content:flex-start;
+
+}
+.fromWhat{
+	display:flex;
+	gap:30px;
+	width:840px;
+	align-items:center;
+}
+
+.emailMsgFrom p{
+	width:145px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+.emailMsgWhat p{
+	width:550px;
+	white-space: nowrap;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	margin-left:25px;
+	
+}
+
+.emailMsg:hover {
+    box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.3);  
+    z-index:2;
+    cursor: pointer;
+}
+.emailMsg:hover span{
+	color:#444;
+}
+
+.emailFrom{
+	padding-left:5px;
+}
+
+.date{
+	color:#5f6368;
+	display: flex;
+	font-size:12px;
+}
+
+.emailMsgIcons span:hover{
+		
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
+}
+
+
+.emailContainerRight {
+	display:flex;
+	flex-direction:column;
+	margin-top:70px;
+	align-items:center;
+}
+.emailContainerRight  img {
+	width:20px;
+	height:20px;
+	padding:10px;
+	margin-bottom:15px;
+}
+.emailContainerRight img:hover{
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
+}
+
+
+.emailContainerRight > div {
+	height:1px;
+	width:20px;
+	margin-left:0;
+	background-color:#e1e7ee;
+	margin-bottom:25px;
+	margin-top:15px;
+
+}
+
+.emailContainerRight span{
+	
+	padding:7px;
+}
+.emailContainerRight span:hover{
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
+}
+
+
+
+@media (max-width:1024px){
+
+	.container {
+	display:flex;
+	background-color:#f6f8fc;
+}
+
+.gmail{
+	cursor:pointer;
+}
+
+.navLeft {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	background-color:#eaf1fb;
+}
+
+.menuIcon {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	padding:10px;
+	gap:1px;
+	cursor:pointer;
+}
+.menuIcon > span {
+	font-size:24px;
+}
+
+.menuIcon > p {
+	font-size:12px;
+	color:#444746;
+}
+.navIcon {
+	padding:10px;
+	margin:10px 0;
+}
+.navIcon:hover {
+	background-color:#dadce0;
+	padding:10px;
+	cursor:pointer;
+	border-radius:50%;
+}
+
+.mail {
+	background-color:#d3e3fd;
+	padding:5px 13px;
+	border-radius:45px;
+	margin-top:7px;
+}
+.mail > span {
+	font-size:20px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	cursor:pointer;
+}
+.mailBottom {
+	padding:5px 13px;
+	cursor:pointer;
+}
+.mailBottom:hover {
+	background-color:#dadce0;
+	padding:5px 13px;
+	border-radius:45px;
+	
+}
+
+
+.mailBottom > span {
+	font-size:20px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+.containerContents {
+	display:flex;
+	justify-content:center;
+	
+}
+
+.contentsLeft {
+	display:flex;
+	flex-direction:column;
+	padding:10px 0px 10px 10px;
+}
+
+.gmail {
+	padding:2px 0px 2px 10px;
+	cursor:pointer;
+}
+
+.compose {
+	width:138.47px;
+	height:55px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#c2e7ff;
+	margin:15px 2px 8px 0px;
+	border-radius:15px;
+	gap:3px;
+	
+}
+.compose:hover{
+	box-shadow: 1px 1px 8px .1px #8c7577;
+	cursor:pointer;
+}
+
+
+.compose > span {
+	font-size:24px;
+	color:#001d35;
+}
+.compose > p {
+	font-size:14px;
+	font-weight:600;
+	color:#001D35;
+	padding:10px;
+	font-weight: 500;
+	font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+.menuContents {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:flex-start;
+	padding:0px 10px 10px 0px;
+	color:#202124;
+	
+}
+
+.contents {
+	display:flex;
+	justify-content:flex-start;
+	align-items:flex-start;
+	padding-left:15px;
+	padding-top:6px;
+	padding-bottom:6px;
+	gap:15px;
+	width:205px;
+	border-radius:30px;
+	color:#202124;
+	margin:0;
+	
+}
+
+.contents:hover {
+	background-color: #dadce0;
+	cursor:pointer;
+}
+
+.inbox {
+	margin-top:6px;
+	border-radius:30px;
+	background-color:#d3e3fd;
+	color:#001d35;
+}
+.inbox:hover {
+	background-color:#d3e3fd;
+}
+
+.contents > p {
+	font-size:14px;
+	padding:2px 0;
+	color:#444;
+	
+}
+.contents > span {
+	font-size:20px;
+	color:#444;
+}
+
+.label {
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	padding:9px 14px;
+	color:#6f6f71;
+	gap:125px;
+	font-size:16px;
+	font-weight:500;
+	color: #444;
+}
+.label span{
+	font-size:20px;
+	padding:10px;
+}
+.label span:hover {
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
+}
+
+.contentsRight{
+	display:flex;
+	flex-direction:column;
+	width:1000px;
+	height:500px;
+	
+}
+
+.navbar {
+	display:flex;
+	align-items:center;
+	width:auto;
+}
+
+.search {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	/* width: 610px; */
+	margin:8px 15px;
+	margin-left:0px;
+	height: auto;
+}
+
+
+.searchBox {
+	display: flex;
+	justify-content: flex-star;
+	align-content: center;
+	align-items: center;
+	width: 599px;
+	height: 50px;
+	border: 1px solid transperant;
+	border-radius: 25px;
+	background-color:#eaf1fb;
+}
+
+.searchIcon{
+	padding:10px;
+	font-size:24px;
+	color:#444746;
+}
+.tuneIcon{
+	padding:10px;
+	font-size:24px;
+	color:#444746;
+}
+
+.searchBox span:hover{
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
+}
+
+.searchText {
+	border: none;
+	outline:none;
+	background-color:#eaf1fb;
+	padding: 0 9px;
+	font-size: 16px;
+	width: 195px;
+	font-weight:500;	
+}
+
+.formText {
+	margin-right:49.5%;
+}
+
+
+.navbarIcons {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:10px;
+	color:#5f6368;
+	margin-left:210px;
+}
+.navbarIcons span{
+	padding:10px;
+	font-size:24px;
+	color:#5F6368;	
+}
+.navbarIcons span:hover{
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
+}
+
+
+.emailContainer {
+	display:flex;
+	align-items:center;
+	/* justify-content: flex-start; */
+}
+
+.emailContainerLeft {
+	background-color:white;
+	border-radius:20px;
+	/* padding-right:30px; */
+}
+
+.emailNav {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:5px;
+	margin-left:12.5px
+	
+}
+.emailNavLeft {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.emailNavLeft span{
+	padding:5px 2px;
+	color:#444;
+	font-size:18px;	
+}
+.emailNavLeft span:hover {
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:15%;
+}
+
+.refAndMore span{
+	font-size:18px;
+	padding:5px;
+	margin-left:10px;
+}
+.refAndMore span:hover {
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:50%;
+}
+
+.emailNavRight {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:12px;
+	gap:10px;
+}
+.emailNavRight p{
+	padding:10px;
+}
+.emailNavRight p:hover{
+	background-color: #dadce0;
+	cursor:pointer;
+	border-radius:5px;
+}
+
+.emailNavRight > span {
+	font-size:20px;
+	color:#b8b8b8;
+	
+}
+.emailNavRight > p {
+	padding-right:15px;
+	color:#5E5E5E;
+}
+
+.emailMsg {
+	display:flex;
+	align-items:center; 
+	justify-content:flex-start;
+	background-color:#f2f6fc;
+	border-bottom: 1px solid #e1e7ee;
+	padding:6px;
+	padding-left:12px;
+	font-size:14px;
+	color:#202124;
 	z-index:1;
 	position:relative;
 }
@@ -462,11 +927,11 @@ span {
 
 .emailFrom{
 	padding-left:5px;
-	width:100%;
 }
 
 .date{
 	color:#5f6368;
+	display: flex;
 	font-size:12px;
 }
 
@@ -480,12 +945,9 @@ span {
 
 .emailContainerRight {
 	display:flex;
-	position:relative;
-	left:5px;
 	flex-direction:column;
 	margin-top:70px;
 	align-items:center;
-	padding:5px;
 }
 .emailContainerRight  img {
 	width:20px;
@@ -520,7 +982,321 @@ span {
 	border-radius:50%;
 }
 
+}
 
+
+@media (max-width:1024px){
+
+	
+	
+	.emailContainerRight{
+		display:none;
+
+	}
+	.navbarIcons{
+		margin-left:120px; 
+	}
+
+}
+
+
+
+@media (max-width:768px){
+
+	body{
+		background-color: #f6f8fc;
+	}
+
+	.navLeft{
+		display:none;
+	}
+	
+	.emailContainerRight{
+		display:none;
+	}
+
+
+	.emailContainerRight{
+		display:none;
+
+	}
+
+	.gmail img{
+		width:180px;
+		height:70px;
+	}
+
+	.compose {
+		padding:10px 20px;
+		margin-bottom:20px;
+		border-radius:20px;	
+	}
+
+
+	.compose > span {
+		font-size:28px;
+	}
+	.compose > p {
+		font-size:20px;
+	}
+
+	.menuContents {
+		padding:0px 20px 20px 2px;
+	
+	}
+
+	.contents {
+		padding:10px 20px;
+		gap:15px;
+		width:235px;
+		border-radius:30px;
+		color:#202124;
+		margin:0;
+	}
+
+
+	.contents > p {
+		font-size:20px;
+	
+	}
+	.contents > span {
+		font-size:28px;
+	}
+
+	.label span{
+		font-size:30px;
+	}
+
+	.label p{
+		font-size:25px;
+	}
+
+	.navbar {
+		display:flex;
+		align-items:center;
+		width:auto;
+	}
+
+
+	.searchBox {
+		width: 599px;
+		height: 70px;
+		border-radius: 55px;
+	}
+
+	.searchIcon{
+		padding:25px;
+		font-size:40px;
+	}
+	.tuneIcon{
+		padding:25px;
+		font-size:40px;
+	}
+
+	.searchText {
+		font-size: 30px;	
+	}
+
+	.formText {
+		margin-right:210px;
+	}
+
+
+	.navbarIcons {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		gap:10px;
+		color:#5f6368;
+		margin-left:60px;
+	}
+	.navbarIcons span{
+		padding:15px;
+		font-size:34px;
+	}
+
+	.emailContainerLeft {
+		background-color:white;
+		border-radius:20px;
+	}
+	
+	.emailNav {
+		padding:10px;
+		margin-left:15px
+	}
+	.emailNavLeft span{
+		padding:10px 4px;
+		font-size:25px;	
+	}
+
+	.refAndMore span{
+		font-size:25px;
+		padding:10px;
+	}
+
+
+	.emailNavRight {
+		font-size:15px;
+	}
+	.emailNavRight p{
+		padding:15px;
+	}
+
+	.emailNavRight > span {
+		font-size:25px;
+	}
+
+	.emailMsg {
+		padding:12px;
+		padding-left:24px;
+		font-size:20px;
+		width:auto;
+	}
+	.emailMsg span{
+		font-size:18px;	
+	}
+	.emailMsgIcons span{
+		font-size:25px;
+		padding:10px;
+	}
+	.emailMsgContents {
+		margin-left:20px;
+
+	}
+	.fromWhat{
+		width:770px;
+	}
+
+	.emailMsgWhat p{
+		width:500px;
+	}
+
+	.date{
+		font-size:19px;
+	}
+
+}
+
+
+@media (max-width:425px){
+
+	body{
+		background-color: #f6f8fc;
+	}
+
+	.navLeft{
+		display:none;
+	}
+	.contentsLeft{
+		display:none;
+	}
+	.accountPerson{
+		display:none;
+	}
+	.emailContainerRight{
+		display:none;
+	}
+	.emailNav{
+		display:none;
+	}
+	.emailMsgFrom{
+		display:none;
+	}
+	.navbar{
+		display:flex;
+		align-items:center;
+	}
+	.search {
+		display: flex;
+		padding:20px 30px;
+		margin:0px;
+	}
+	.searchBox {
+		display: flex;
+		justify-content:flex-start;
+		align-items: center;
+		background-color:#eaf1fb;
+		border-radius:100px;
+		padding:20px;
+		width:800px;
+	}
+	.searchIcon{
+		font-size:50px;
+		color:#444746;
+		padding:15px;
+	}
+	.searchText {
+		border: none;
+		outline:none;
+		background-color:#eaf1fb;
+		font-size: 35px;
+		color:#202124;		
+		width:500px;
+	}
+	.formText {
+		width:430px;
+	}
+	.tuneIcon{
+		font-size:50px;
+		color:#444746;
+		padding:15px;
+	}
+	
+	.navbarIcons{
+		
+		margin-left:10px;
+	}
+	
+	.navbarIcons span{
+		font-size:60px;
+		padding:0px;
+	}
+	.containerRight{
+		width:auto;	
+	}
+	.emailContainerLeft{
+		width:100%;
+	}
+	.emailMsgIcons{
+		width:auto;
+	}
+	.emailMsgIcons span{
+		font-size:35px;
+		padding:5px;
+		marging:0px;
+		
+	}
+	.emailMsg {
+		display: flex;
+		justify-content:flex-start;
+		background-color:#f2f6fc;
+		border-bottom: 4px solid #e1e7ee;
+		font-size:40px;
+		color:#202124;
+		z-index:1;
+		position:relative;
+		width:auto;
+		margin:0px 40px;
+	}
+	.fromWhat {
+    		display: flex; 
+		gap:0px;
+		width:700px;
+	}
+	.emailMsgWhat p{
+		font-size:30px;
+		white-space: nowrap;
+		overflow: hidden; 
+		text-overflow: ellipsis;
+		width:550px;
+		padding:15px 0px;
+	}
+	
+	.date{
+		font-size:23px;
+	}
+
+}
 
 
 
@@ -545,7 +1321,9 @@ span {
 	.emailNav{
 		display:none;
 	}
-	
+	.emailMsgIconsBox{
+		display:none;
+	}
 	.emailMsgFrom{
 		display:none;
 	}
@@ -555,96 +1333,94 @@ span {
 	}
 	.search {
 		display: flex;
-		padding:20px;
-		margin-left:35%;
+		padding:20px 30px;
+		margin:0px;
 	}
 	.searchBox {
 		display: flex;
+		justify-content:flex-start;
 		align-items: center;
 		background-color:#eaf1fb;
-		border-radius: 100px;
-		padding:10px;
-		width:515px;
+		border-radius:100px;
+		padding:20px;
+		width:800px;
 	}
 	.searchIcon{
-		font-size:40px;
+		font-size:60px;
 		color:#444746;
-		padding-left:15px;
+		padding:15px;
 	}
 	.searchText {
 		border: none;
 		outline:none;
 		background-color:#eaf1fb;
-		font-size: 30px;
-		color:#202124;
-	}
-	.icons{
-		margin:0px;
+		font-size: 40px;
+		color:#202124;		
+		width:500px;
 	}
 	.formText {
- 		margin-right: 100px;
+		width:410px;
 	}
 	.tuneIcon{
-		font-size:40px;
-		color:#444746;;
+		font-size:60px;
+		color:#444746;
+		padding:15px;
 	}
+	
 	.navbarIcons{
+		
 		margin-left:0px;
 	}
+	
 	.navbarIcons span{
-		font-size:50px;
-		position:relative;
-		right:20px;
+		font-size:70px;
+		padding:0px;
 	}
-
+	.containerRight{
+		width:auto;	
+	}
+	.emailContainerLeft{
+		width:100%;
+	}
+	.emailMsgIcons{
+		width:auto;
+	}
+	.emailMsgIcons span{
+		font-size:35px;
+		padding:0px;
+		marging:0px;
+		
+	}
 	.emailMsg {
 		display: flex;
-		padding:25px;
-		padding-right:0px;
-		justify-content:space-between;
+		justify-content:flex-start;
 		background-color:#f2f6fc;
 		border-bottom: 4px solid #e1e7ee;
-		font-size:35px;
+		font-size:30px;
 		color:#202124;
 		z-index:1;
 		position:relative;
+		width:auto;
+	}
+	.fromWhat {
+    		display: flex; 
+		gap:0px;
 	}
 	.emailMsgWhat p{
-		font-size:25px;
+		font-size:35px;
 		white-space: nowrap;
 		overflow: hidden; 
 		text-overflow: ellipsis;
-		position:relative;
-		left:110px;
-		max-width:500px;
+		width:600px;
+		padding:15px 0px;
 	}
-	.fromWhat {
-    		display: flex;
-    		gap: 5px; 
-		position:relative;
-		left:110px;
-	}
-	.emailMsgIcons {
-    		display: flex;
-    		justify-content: center;
-    		align-items: center;
-    		width: 6.5%;
-   		color: #b8b8b8;
-		position:relative;
-		left:110px;
-	}
+	
 	.date{
 		color:#5f6368;
-		font-size:20px;	
-		position:relative;
-		left:25px;
+		font-size:25px;
 	}
 
 }
-
-
-
-
 
 
 @media (max-width:320px){
@@ -680,80 +1456,80 @@ span {
 	}
 	.search {
 		display: flex;
-		padding:20px;
-		margin-left:35%;
+		padding:20px 30px;
+		margin:0px;
 	}
 	.searchBox {
 		display: flex;
+		justify-content:flex-start;
 		align-items: center;
 		background-color:#eaf1fb;
-		border-radius: 100px;
-		padding:10px;
-		width:515px;
+		border-radius:100px;
+		padding:30px;
+		width:800px;
 	}
 	.searchIcon{
-		font-size:40px;
+		font-size:70px;
 		color:#444746;
-		padding-left:15px;
+		padding:15px;
 	}
 	.searchText {
 		border: none;
 		outline:none;
 		background-color:#eaf1fb;
-		font-size: 30px;
-		color:#202124;
-	}
-	.icons{
-		margin:0px;
+		font-size: 50px;
+		color:#202124;		
+		width:500px;
 	}
 	.formText {
- 		margin-right: 100px;
+		width:400px;
 	}
 	.tuneIcon{
-		font-size:40px;
-		color:#444746;;
+		font-size:70px;
+		color:#444746;
+		padding:15px;
 	}
+	
 	.navbarIcons{
+		
 		margin-left:0px;
 	}
+	
 	.navbarIcons span{
-		font-size:50px;
-		position:relative;
-		right:20px;
+		font-size:80px;
+		padding:0px;
+	}
+	.containerRight{
+		width:auto;	
 	}
 
 	.emailMsg {
 		display: flex;
-		padding:25px;
-		padding-right:0px;
-		justify-content:space-between;
+		justify-content:flex-start;
 		background-color:#f2f6fc;
 		border-bottom: 4px solid #e1e7ee;
-		font-size:35px;
+		font-size:40px;
 		color:#202124;
 		z-index:1;
 		position:relative;
 	}
+	.fromWhat {
+    		display: flex; 
+		width:740px;
+	}		
+
 	.emailMsgWhat p{
-		font-size:25px;
+		font-size:45px;
 		white-space: nowrap;
 		overflow: hidden; 
 		text-overflow: ellipsis;
-		position:relative;
-		left:200px;
-		max-width:500px;
+		width:650px;
+		padding:20px;
 	}
-	.fromWhat {
-    		display: flex;
-    		gap: 5px; 
-		position:relative;
-		left:110px;
-	}
+	
 	.date{
 		color:#5f6368;
-		font-size:20px;	
-		position:relative;
-		left:25px;
+		font-size:30px;
 	}
 
 }
